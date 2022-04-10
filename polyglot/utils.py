@@ -3,6 +3,15 @@
 
 """Collection of general utilities."""
 
+from __future__ import print_function
+from os import path
+import os
+import tarfile
+
+import six
+from six import text_type as unicode
+from six import string_types
+
 
 def _open(file_, mode='r'):
     """Open file object given filenames, open files or even archives."""
